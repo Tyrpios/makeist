@@ -181,8 +181,9 @@ header {
 
                 ul {
                     float: right;
+                }
 
-                   ul li {
+                ul li {
                         @include va;
 
                         list-style-type: none;
@@ -228,7 +229,6 @@ header {
             }
         }
     }
-}
 
 .sidebar {
     @include no-select();
