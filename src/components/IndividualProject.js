@@ -4,7 +4,7 @@ import { useProjectsValue, useSelectedProjectValue } from '../context';
 import { firebase } from '../firebase';
 
 export const IndividualProject = ({ project }) => {
-    const [showConfirm, setShowConfirm] = useState(false);
+    const [showConfirm, setShowConfirm] = useState();
     const { projects, setProjects } = useProjectsValue();
     const { setSelectedProject } = useSelectedProjectValue();
 
@@ -13,7 +13,7 @@ export const IndividualProject = ({ project }) => {
         .collection('projects')
         .doc(docId).delete()
         .then(() => {
-            setProjects([...projects]);
+            setProjects([...projects])
             setSelectedProject('INBOX');
         });
     };

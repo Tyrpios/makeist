@@ -3,20 +3,21 @@ import { FaPizzaSlice } from 'react-icons/fa';
 
 export const Header = () => {
 
-    return ( <header className="header" data-testid="header">
+    return ( 
+    <header className="header" data-testid="header">
         <nav>
-            <div className="logo">
+        <div className="logo">
                 <img src="/images/logo.png" alt="makeist" />
             </div>
-            <div className="Settings">
+            <div className="settings">
                 <ul>
-                    <li data-testid="quick-add-task-action"className="settings__add">+</li>
-                    <li data-testid="dark-mode-action"className="settings__darkmode">
+                    <li className="settings__add" data-testid="quick-add-task-action">+</li>
+                    <li className="settings__darkmode"data-testid="dark-mode-action">
                         <FaPizzaSlice />
                         </li>
                 </ul>
             </div>
         </nav>
     </header>
-    )
+    );
 }
