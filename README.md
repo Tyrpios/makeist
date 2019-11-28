@@ -1,2 +1,2 @@
 
-Making a schedule application.
+Making a schedule application clone like ToDoist.
